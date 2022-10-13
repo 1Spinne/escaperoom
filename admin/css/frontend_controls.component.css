@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'alarm-clock';
+  src: url("../assets/alarm-clock.ttf.woff") format("woff"), url("../assets/alarm-clock.ttf.svg#alarm-clock") format("svg"), url("../assets/alarm-clock.ttf.eot"), url("../assets/alarm-clock.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper .id {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.wrapper form input {
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  width: 180px;
+  aspect-ratio: 1 / 0.286;
+  font-size: 60px;
+  text-align: center;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.wrapper form input:focus {
+  outline: none;
+}
+
+.wrapper form button {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 10px;
+  border: none;
+  background: rgba(153, 255, 255, 0.3);
+  color: #99ffff;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.wrapper form button:hover {
+  background: rgba(153, 255, 255, 0.5);
+}
+
+.wrapper form button.wrong {
+  background: rgba(255, 102, 102, 0.3);
+  color: #ff6666;
+}
+
+.wrapper form button.wrong:hover {
+  background: rgba(255, 102, 102, 0.3);
+}
+
+.wrapper #timer {
+  font-family: "alarm-clock";
+  font-size: 100px;
+  color: #99ffff;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper #confirm {
+  color: white;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="id"></div>
+        <form method="POST" id="code" autocomplete="off">
+            <label><img class="icon" src="assets/icons/schwert.png"><input style="text-transform:uppercase" maxlength="1" type="text" id="a" name="a"></label>
+            <label><img class="icon" src="assets/icons/auge.png"><input style="text-transform:uppercase" maxlength="1" type="text" id="b" name="b"></label>
+            <label><img class="icon" src="assets/icons/dreieck.png"><input style="text-transform:uppercase" maxlength="1" type="text" id="c" name="c"></label>
+            <label><img class="icon" src="assets/icons/stern.png"><input style="text-transform:uppercase" maxlength="1" type="text" id="d" name="d"></label>
+            <button type="submit" name="submit" id="submit">Überprüfen</button>
+        </form>
+        <button id="semiSubmit" onclick="submit()">Überprüfen</button>
+        <div id="w"></div>
+        <br>
+        <div id="buttons">
+            <button onclick="start(300)" id="5">5 Minuten</button>
+            <button onclick="start(600)" id="10">10 Minuten</button>
+            <button onclick="start(900)" id="15">15 Minuten</button><br>
+        </div>
+        <div id="timer"></div>
+    </div>
+
+    <script src="socket.io/socket.io.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

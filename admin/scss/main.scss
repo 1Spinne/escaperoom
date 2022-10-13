@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'alarm-clock';
+    src:url('../assets/alarm-clock.ttf.woff') format('woff'),
+        url('../assets/alarm-clock.ttf.svg#alarm-clock') format('svg'),
+        url('../assets/alarm-clock.ttf.eot'),
+        url('../assets/alarm-clock.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+$color-clock: hsl(180, 100%, 80%);
+$color-clock-transparent: hsla(180, 100%, 80%, 0.3);
+$color-clock-transparent-hover: hsla(180, 100%, 80%, 0.5);
+
+$color-wrong: hsl(0, 100%, 70%);
+$color-wrong-transparent: hsla(0, 100%, 70%, 0.3);
+$color-wrong-transparent-hover: hsla(0, 100%, 70%, 0.5);
+
+:root {
+    --color-clock-h: 180;
+    --color-clock-s: 100%;
+    --color-clock-l: 80%;
+
+    --color-wrong-h: 0;
+    --color-wrong-s: 100%;
+    --color-wrong-l: 70%;
+}
+
+body {
+    background: black;
+    text-align: center;
+    color: white;
+
+    .fe-ctrls {
+        // width: 100%;
+        // margin: 0 auto;
+        .fe-ctrl {
+            width: 300px;
+            // min-width: 50px;
+            // height: 100%;
+            border: 2px white solid;
+            background: $color-clock-transparent;
+            padding: 10px;
+            margin: 10px auto;
+        }
+    }
+}
