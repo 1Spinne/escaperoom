@@ -1,7 +1,6 @@
 # Escaperoom
 Ths was for a school project and probably still has some bugs.<br>
 Feel free to make changes and create a PR<br>
-I'll try to look over it.
 
 # Run
 Open your terminal and go into `escaperoom/backend`.<br>
@@ -11,7 +10,7 @@ To start the backend: `npm start`
 
 You can just open `frontend/index.html` for the player view.
 
-But for the admin page you have to put it on some kind of webserver like [lite-server](https://github.com/johnpapa/lite-server)
+But for the admin page you have to use some kind of webserver like [lite-server](https://github.com/johnpapa/lite-server)
 
 # A bit of explanation
 The player must enter 4 letters or numbers (one for each icon).<br>
