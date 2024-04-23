@@ -8,7 +8,7 @@ Then run `npm install`
 
 To start the backend: `npm start`
 
-You can just open `frontend/index.html` for the player view.
+You can just open `frontend/index.html` in a browser for the player’s view.
 
 But for the admin page you have to use some kind of webserver like [lite-server](https://github.com/johnpapa/lite-server)
 
